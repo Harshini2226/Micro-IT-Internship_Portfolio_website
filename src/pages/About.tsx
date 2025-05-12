@@ -52,7 +52,7 @@ const About = () => {
           </div>
           <div className="rounded">
             <h2 className="text-3xl font-bold mb-6">Thirunahari Harshini</h2>
-            <p className="text-muted-foreground mb-4 font-medium text-lg">I'm a passionate full-stack developer with expertise in creating modern and responsive web applications. With over 4 years of professional experience, I specialize in crafting user-friendly interfaces that deliver exceptional user experiences.</p>
+            <p className="text-muted-foreground mb-4 font-medium text-lg">I'm a passionate full-stack developer with expertise in creating modern and responsive web applications. I specialize in crafting user-friendly interfaces that deliver exceptional user experiences.</p>
             <p className="text-muted-foreground mb-4 font-medium text-lg">My journey in web development began during college, where I discovered my passion for combining creativity with technical problem-solving. With a strong background in Python, Java, and C programming, I combine technical expertise with creative problem-solving to deliver impactful projects. My passion lies in developing solutions that are not only functional but also provide exceptional user experiences.
 
 I continuously strive to expand my knowledge and keep up with the latest technologies to provide cutting-edge solutions to complex problems. When I'm not coding, I enjoy exploring new technologies, participating in hackathons, and contributing to open-source projects.</p>
@@ -71,17 +71,12 @@ I continuously strive to expand my knowledge and keep up with the latest technol
         <div className="mb-16">
           <div className="flex items-center mb-8">
             <GraduationCap className="h-8 w-8 text-primary mr-4" />
-            <h2 className="text-3xl font-bold">Education</h2>
+            <h2 className="text-3xl font-bold">Education  </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {educationData.map((education, index) => <Card key={index}>
-                <CardContent className="">
-                  
-                  
-                  
-                  
-                </CardContent>
+                
               </Card>)}
           </div>
         </div>
