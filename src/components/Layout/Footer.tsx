@@ -8,12 +8,12 @@ const Footer = () => {
           {/* About */}
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              Harshini<span className="text-primary">.</span>
+              Harshini<span className="text-primary">.T</span>
             </h3>
             <p className="text-muted-foreground mb-4">
               Creating modern and responsive web experiences that leave a lasting impression.
             </p>
-            <div className="flex space-x-4 add(svg(phone,email))">
+            <div className="flex space-x-4 add">
               <a href="https://github.com" className="hover:text-primary transition-colors" aria-label="GitHub">
                 <Github size={20} />
               </a>
