@@ -40,9 +40,7 @@ const TestimonialsPreview = () => {
                 <p className="italic mb-6">{testimonial.quote}</p>
                 <div>
                   <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.position}, {testimonial.company}
-                  </p>
+                  
                 </div>
               </CardContent>
             </Card>)}
