@@ -46,20 +46,17 @@ const About = () => {
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-12 text-center">About Me</h1>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16 rounded">
           <div>
-            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" alt="Thirunahari Harshini" className="rounded-lg shadow-lg w-full h-auto" />
+            <img alt="Thirunahari Harshini" className="rounded-lg shadow-lg w-full h-auto" src="/lovable-uploads/fec67c0c-81ed-4aad-b566-b7e1be05f3f0.jpg" />
           </div>
-          <div>
+          <div className="rounded">
             <h2 className="text-3xl font-bold mb-6">Thirunahari Harshini</h2>
-            <p className="text-muted-foreground mb-4">I'm a passionate full-stack developer with expertise in creating modern and responsive web applications. With over 4 years of professional experience, I specialize in crafting user-friendly interfaces that deliver exceptional user experiences.</p>
-            <p className="text-muted-foreground mb-4">
-              My journey in web development began during college, where I discovered my passion 
-              for combining creativity with technical problem-solving. Since then, I've worked 
-              with a variety of clients across different industries, helping them establish a 
-              strong online presence.
-            </p>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground mb-4 font-medium text-lg">I'm a passionate full-stack developer with expertise in creating modern and responsive web applications. With over 4 years of professional experience, I specialize in crafting user-friendly interfaces that deliver exceptional user experiences.</p>
+            <p className="text-muted-foreground mb-4 font-medium text-lg">My journey in web development began during college, where I discovered my passion for combining creativity with technical problem-solving. With a strong background in Python, Java, and C programming, I combine technical expertise with creative problem-solving to deliver impactful projects. My passion lies in developing solutions that are not only functional but also provide exceptional user experiences.
+
+I continuously strive to expand my knowledge and keep up with the latest technologies to provide cutting-edge solutions to complex problems. When I'm not coding, I enjoy exploring new technologies, participating in hackathons, and contributing to open-source projects.</p>
+            <p className="text-muted-foreground font-medium text-lg">
               When I'm not coding, you can find me exploring new design trends, contributing 
               to open-source projects, or enjoying outdoor photography adventures.
             </p>
@@ -79,11 +76,11 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {educationData.map((education, index) => <Card key={index}>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{education.degree}</h3>
-                  <p className="font-medium mb-1">{education.institution}</p>
-                  <p className="text-sm text-muted-foreground mb-4">{education.year}</p>
-                  <p className="text-muted-foreground">{education.description}</p>
+                <CardContent className="Bachelor of Technology\nComputer Science & Engineering\n\n2022 - 2026\n\nFocusing on AI, machine learning, and software development with hands-on project experience.">
+                  
+                  
+                  
+                  
                 </CardContent>
               </Card>)}
           </div>
