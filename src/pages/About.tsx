@@ -76,7 +76,7 @@ I continuously strive to expand my knowledge and keep up with the latest technol
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {educationData.map((education, index) => <Card key={index}>
-                <CardContent className="Bachelor of Technology\nComputer Science & Engineering\n\n2022 - 2026\n\nFocusing on AI, machine learning, and software development with hands-on project experience.">
+                <CardContent className="">
                   
                   
                   
