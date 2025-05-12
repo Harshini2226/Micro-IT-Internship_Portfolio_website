@@ -13,7 +13,7 @@ const Footer = () => {
             <p className="text-muted-foreground mb-4">
               Creating modern and responsive web experiences that leave a lasting impression.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 add(svg(phone,email))">
               <a href="https://github.com" className="hover:text-primary transition-colors" aria-label="GitHub">
                 <Github size={20} />
               </a>
@@ -21,10 +21,10 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a href="https://twitter.com" className="hover:text-primary transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
+                
               </a>
               <a href="https://instagram.com" className="hover:text-primary transition-colors" aria-label="Instagram">
-                <Instagram size={20} />
+                
               </a>
             </div>
           </div>

@@ -1,9 +1,7 @@
-
 import React from "react";
 import Layout from "@/components/Layout/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from "lucide-react";
-
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -12,9 +10,7 @@ const Contact = () => {
     // For demo purposes, let's just show an alert
     alert("Message sent successfully!");
   };
-
-  return (
-    <Layout>
+  return <Layout>
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-4 text-center">Get In Touch</h1>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
@@ -41,9 +37,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-primary" />
               </div>
               <h3 className="text-lg font-medium mb-2">Phone</h3>
-              <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                +1 (234) 567-890
-              </a>
+              <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">+91 9014990722</a>
             </CardContent>
           </Card>
           
@@ -71,55 +65,28 @@ const Contact = () => {
                     <label htmlFor="name" className="block mb-2 text-sm font-medium">
                       Your Name
                     </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full p-3 rounded-md border border-border bg-background"
-                      placeholder="John Doe"
-                      required
-                    />
+                    <input type="text" id="name" className="w-full p-3 rounded-md border border-border bg-background" placeholder="John Doe" required />
                   </div>
                   <div>
                     <label htmlFor="email" className="block mb-2 text-sm font-medium">
                       Your Email
                     </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full p-3 rounded-md border border-border bg-background"
-                      placeholder="john@example.com"
-                      required
-                    />
+                    <input type="email" id="email" className="w-full p-3 rounded-md border border-border bg-background" placeholder="john@example.com" required />
                   </div>
                 </div>
                 <div className="mb-6">
                   <label htmlFor="subject" className="block mb-2 text-sm font-medium">
                     Subject
                   </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    className="w-full p-3 rounded-md border border-border bg-background"
-                    placeholder="Project Inquiry"
-                    required
-                  />
+                  <input type="text" id="subject" className="w-full p-3 rounded-md border border-border bg-background" placeholder="Project Inquiry" required />
                 </div>
                 <div className="mb-6">
                   <label htmlFor="message" className="block mb-2 text-sm font-medium">
                     Message
                   </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full p-3 rounded-md border border-border bg-background"
-                    placeholder="Hello, I'm interested in your services..."
-                    required
-                  ></textarea>
+                  <textarea id="message" rows={5} className="w-full p-3 rounded-md border border-border bg-background" placeholder="Hello, I'm interested in your services..." required></textarea>
                 </div>
-                <button
-                  type="submit"
-                  className="bg-primary text-primary-foreground px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
-                >
+                <button type="submit" className="bg-primary text-primary-foreground px-6 py-3 rounded-md hover:bg-primary/90 transition-colors">
                   Send Message
                 </button>
               </form>
@@ -132,8 +99,9 @@ const Contact = () => {
             <Card>
               <CardContent className="p-0 overflow-hidden h-72">
                 {/* Placeholder for map - in a real project, you would embed a Google Maps iframe or similar */}
-                <div className="w-full h-full bg-muted flex items-center justify-center">
-                  <p className="text-muted-foreground">Map Embed would go here</p>
+                <div className="w-full h-full flex items-center justify-center bg-zinc-50 rounded">
+                  <p className="text-muted-foreground text-base px-[32px] my-[4px] mx-[13px]">Availability I'm currently available for freelance work and project collaborations. Typically, I respond to messages within 24-48 hours. 
+ -Available for new projects</p>
                 </div>
               </CardContent>
             </Card>
@@ -143,41 +111,25 @@ const Contact = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
                 <div className="grid grid-cols-2 gap-6">
-                  <a 
-                    href="https://github.com" 
-                    className="flex items-center space-x-3 p-3 rounded-md hover:bg-muted transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://github.com" className="flex items-center space-x-3 p-3 rounded-md hover:bg-muted transition-colors" target="_blank" rel="noopener noreferrer">
                     <Github className="h-6 w-6" />
-                    <span>GitHub</span>
+                    <span className="text-xs font-medium">Github:
+https://github.com/
+Harshini2226</span>
                   </a>
-                  <a 
-                    href="https://linkedin.com" 
-                    className="flex items-center space-x-3 p-3 rounded-md hover:bg-muted transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://linkedin.com" className="flex items-center space-x-3 p-3 rounded-md hover:bg-muted transition-colors" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-6 w-6" />
-                    <span>LinkedIn</span>
+                    <span className="text-xs font-medium">LinkedIn: https ://www.linkedin. com /in/ harshini-thirunahari-8373872a0/</span>
                   </a>
-                  <a 
-                    href="https://twitter.com" 
-                    className="flex items-center space-x-3 p-3 rounded-md hover:bg-muted transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Twitter className="h-6 w-6" />
-                    <span>Twitter</span>
+                  <a href="https://twitter.com" className="flex items-center space-x-3 p-3 rounded-md hover:bg-muted transition-colors" target="_blank" rel="noopener noreferrer">
+                    
+                    <span className="text-left font-medium"> Phone:+91 9014990722</span>
                   </a>
-                  <a 
-                    href="https://instagram.com" 
-                    className="flex items-center space-x-3 p-3 rounded-md hover:bg-muted transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Instagram className="h-6 w-6" />
-                    <span>Instagram</span>
+                  <a href="https://instagram.com" className="flex items-center space-x-3 p-3 rounded-md hover:bg-muted transition-colors" target="_blank" rel="noopener noreferrer">
+                    
+                    <span className="font-medium">E-mail:thirunahari
+harshini@gmail.com
+                  </span>
                   </a>
                 </div>
               </CardContent>
@@ -185,8 +137,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Contact;
