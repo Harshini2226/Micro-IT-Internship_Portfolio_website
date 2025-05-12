@@ -13,7 +13,7 @@ const Footer = () => {
             <p className="text-muted-foreground mb-4">
               Creating modern and responsive web experiences that leave a lasting impression.
             </p>
-            <div className="flex space-x-4 add">
+            <div className="flex space-x-8 add">
               <a href="https://github.com" className="hover:text-primary transition-colors" aria-label="GitHub">
                 <Github size={20} />
               </a>
