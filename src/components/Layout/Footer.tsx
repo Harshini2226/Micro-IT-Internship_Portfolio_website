@@ -1,11 +1,8 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-background border-t border-border py-12">
+  return <footer className="bg-background border-t border-border py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About */}
@@ -51,21 +48,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
                 <Mail size={16} className="text-primary" />
-                <a href="mailto:harshini@example.com" className="text-muted-foreground hover:text-primary transition-colors">
-                  harshini@example.com
-                </a>
+                <a href="mailto:harshini@example.com" className="text-muted-foreground hover:text-primary transition-colors">thirunahariharshini@gmail.com</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={16} className="text-primary" />
-                <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                  +1 (234) 567-890
-                </a>
+                <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">+91 9014990722</a>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin size={16} className="text-primary mt-1" />
-                <span className="text-muted-foreground">
-                  Your Location, City, Country
-                </span>
+                <span className="text-muted-foreground">Vidyanagar,Vemulawada, Hyderabad, India</span>
               </li>
             </ul>
           </div>
@@ -75,8 +66,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} Thirunahari Harshini. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

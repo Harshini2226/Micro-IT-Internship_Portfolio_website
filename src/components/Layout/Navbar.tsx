@@ -1,20 +1,15 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  return (
-    <nav className="fixed top-0 left-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
+  return <nav className="fixed top-0 left-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
-          Harshini<span className="text-primary">.</span>
+          Harshini<span className="text-primary"> Thirunahari</span>
         </Link>
         
         {/* Desktop Navigation */}
@@ -36,8 +31,7 @@ const Navbar = () => {
       </div>
       
       {/* Mobile Navigation Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden absolute w-full bg-background border-b border-border">
+      {isMenuOpen && <div className="md:hidden absolute w-full bg-background border-b border-border">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <Link to="/" className="hover:text-primary transition-colors" onClick={toggleMenu}>Home</Link>
             <Link to="/about" className="hover:text-primary transition-colors" onClick={toggleMenu}>About</Link>
@@ -46,10 +40,7 @@ const Navbar = () => {
             <Link to="/blog" className="hover:text-primary transition-colors" onClick={toggleMenu}>Blog</Link>
             <Link to="/contact" className="hover:text-primary transition-colors" onClick={toggleMenu}>Contact</Link>
           </div>
-        </div>
-      )}
-    </nav>
-  );
+        </div>}
+    </nav>;
 };
-
 export default Navbar;

@@ -6,8 +6,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="order-2 md:order-1">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
-            Hi, I'm <span className="text-primary">Harshini</span><br />
-            <span className="text-3xl md:text-4xl">Frontend Developer</span>
+            Hi, I'm <span className="text-primary">Harshini.T</span><br />
+            <span className="text-3xl md:text-4xl">Full-Stack Developer</span>
           </h1>
           
           <p className="text-muted-foreground text-lg mb-8">
