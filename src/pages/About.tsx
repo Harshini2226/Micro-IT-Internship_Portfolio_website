@@ -69,10 +69,7 @@ I continuously strive to expand my knowledge and keep up with the latest technol
         
         {/* Education Section */}
         <div className="mb-16">
-          <div className="flex items-center mb-8">
-            <GraduationCap className="h-8 w-8 text-primary mr-4" />
-            <h2 className="text-3xl font-bold">Education  </h2>
-          </div>
+          
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {educationData.map((education, index) => <Card key={index}>
@@ -82,23 +79,7 @@ I continuously strive to expand my knowledge and keep up with the latest technol
         </div>
         
         {/* Experience Section */}
-        <div>
-          <div className="flex items-center mb-8">
-            <Briefcase className="h-8 w-8 text-primary mr-4" />
-            <h2 className="text-3xl font-bold">Certificates</h2>
-          </div>
-          
-          <div className="space-y-6">
-            {experienceData.map((experience, index) => <Card key={index}>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{experience.position}</h3>
-                  <p className="font-medium mb-1">{experience.company}</p>
-                  <p className="text-sm text-muted-foreground mb-4">{experience.duration}</p>
-                  <p className="text-muted-foreground">{experience.description}</p>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
+        
       </div>
     </Layout>;
 };
