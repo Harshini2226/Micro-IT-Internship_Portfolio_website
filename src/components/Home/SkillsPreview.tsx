@@ -10,10 +10,10 @@ interface Skill {
 const skills: Skill[] = [
   { name: "HTML/CSS", percentage: 95 },
   { name: "JavaScript", percentage: 90 },
-  { name: "React", percentage: 85 },
-  { name: "TypeScript", percentage: 80 },
-  { name: "UI/UX Design", percentage: 75 },
-  { name: "Node.js", percentage: 70 },
+  { name: "Python", percentage: 85 },
+  { name: "Java", percentage: 80 },
+  { name: "AI/ML", percentage: 75 },
+  { name: "Blockchain", percentage: 75 },
 ];
 
 const SkillsPreview = () => {
