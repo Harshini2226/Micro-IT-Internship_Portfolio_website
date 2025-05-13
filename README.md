@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: prompt-persona-portfolio-harshcraft.lovable.app
+**URL**:https://prompt-persona-portfolio-harshcraft.lovable.app/
 ## How can I edit this code?
 
 There are several ways of editing your application.
