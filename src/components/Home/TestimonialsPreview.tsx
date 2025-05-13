@@ -26,11 +26,8 @@ const TestimonialsPreview = () => {
   return <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Client Testimonials</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Don't just take my word for it. Here's what my clients have to say
-            about working with me.
-          </p>
+          <h2 className="text-3xl font-bold mb-4">Projects I worked on</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Don't just take my word for it. Here's what my projects I have gone through to improve my skills in various aspects and new technologies.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -10,9 +10,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-4">
               Harshini<span className="text-primary">.T</span>
             </h3>
-            <p className="text-muted-foreground mb-4">
-              Creating modern and responsive web experiences that leave a lasting impression.
-            </p>
+            <p className="text-muted-foreground mb-4">Creating modern and responsive web experiences that leave a lasting impression. I am very happy to work together. And if any one had any idea lets collaborate and work together. So I am available in LinkedIn. Please pin me in LinkedIn.</p>
             <div className="flex space-x-8 add">
               <a href="https://github.com" className="hover:text-primary transition-colors" aria-label="GitHub">
                 <Github size={20} />
