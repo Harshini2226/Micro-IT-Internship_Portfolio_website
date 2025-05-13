@@ -1,8 +1,7 @@
-
 import React from "react";
 import Layout from "@/components/Layout/Layout";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { GraduationCap, Briefcase, Award, Cpu, Database, Java, MessageCircle } from "lucide-react";
+import { GraduationCap, Briefcase, Award, Cpu, Database, MessageCircle } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 
 interface Education {
@@ -28,58 +27,52 @@ interface Certificate {
 
 const educationData: Education[] = [
   {
-    degree: "Master of Computer Science",
-    institution: "University of Technology",
-    year: "2018 - 2020",
-    description: "Specialized in Human-Computer Interaction and Web Technologies."
+    degree: "Bachelor of Computer Science",
+    institution: "Malla Reddy Engineering College for Women",
+    year: "2023 - 2027",
+    description: "Specializing in Computer Science fundamentals and programming."
   },
   {
-    degree: "Bachelor of Computer Science",
-    institution: "State University",
-    year: "2014 - 2018",
-    description: "Focused on Software Engineering and Interactive Design."
+    degree: "AI/ML Specializations",
+    institution: "NoviTech Online Classes",
+    year: "2024",
+    description: "Advanced courses focused on Artificial Intelligence and Machine Learning technologies."
   }
 ];
 
 const experienceData: Experience[] = [
   {
-    position: "Senior Frontend Developer",
-    company: "Tech Innovations Inc.",
-    duration: "2021 - Present",
-    description: "Lead frontend development for enterprise web applications, implemented responsive design systems, and mentored junior developers."
+    position: "AI/ML Intern",
+    company: "YBI Foundation",
+    duration: "2024",
+    description: "Enhanced AI/ML skills through practical application of machine learning algorithms and artificial intelligence concepts."
   },
   {
-    position: "Frontend Developer",
+    position: "App Development Intern",
     company: "Digital Solutions Agency",
-    duration: "2018 - 2021",
-    description: "Developed and maintained client websites, collaborated with designers to implement UI/UX designs, and optimized website performance."
-  },
-  {
-    position: "Web Development Intern",
-    company: "Creative Web Studio",
-    duration: "2017 - 2018",
-    description: "Assisted in building websites for small businesses, learned modern web development practices, and contributed to team projects."
+    duration: "2023 - 2024",
+    description: "Helped in building mobile and web applications, implementing functionality and enhancing user experience."
   }
 ];
 
 const certificatesData: Certificate[] = [
   {
-    name: "Advanced Blockchain Development",
-    issuer: "Blockchain Academy",
-    year: "2022",
-    description: "Comprehensive course covering blockchain fundamentals, smart contracts, and decentralized applications."
+    name: "Micro Certification",
+    issuer: "ServiceNow",
+    year: "2025",
+    description: "Comprehensive certification covering ServiceNow platform basics and fundamentals."
   },
   {
-    name: "Machine Learning Specialization",
-    issuer: "AI Institute",
-    year: "2021",
-    description: "In-depth training on machine learning algorithms, neural networks, and practical applications in data science."
+    name: "Oracle Certified Foundations Associate",
+    issuer: "Oracle",
+    year: "2024",
+    description: "Foundational knowledge in Oracle technologies and database management systems."
   },
   {
-    name: "Full Stack Web Development",
-    issuer: "Web Dev Bootcamp",
-    year: "2020",
-    description: "Intensive program covering frontend and backend technologies including React, Node.js, and database management."
+    name: "YBI Internship Certification",
+    issuer: "YBI Foundation",
+    year: "2023 - 2024",
+    description: "AI/ML domain certification, gaining fundamentals and basics that helped to build several projects."
   }
 ];
 

@@ -1,6 +1,8 @@
+
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+
 const Hero = () => {
   return <section className="relative min-h-[90vh] flex items-center">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
@@ -10,7 +12,7 @@ const Hero = () => {
             <span className="text-3xl md:text-4xl">Full-Stack Developer</span>
           </h1>
           
-          <p className="text-muted-foreground text-lg mb-8">I am a versatile software engineer skilled in both front-end and back-end development, capable of building complete web applications. I create modern and responsive web experiences that leave a lasting impression. Specializing in clean, elegant UI design and powerful functionality.</p>
+          <p className="text-muted-foreground text-lg mb-8">I am a versatile software engineer skilled in both front-end and back-end development, capable of building complete web applications. With expertise in Python, Java, AI/ML, and Blockchain, I create modern and responsive web experiences that leave a lasting impression. Specializing in clean, elegant UI design and powerful functionality.</p>
           
           <div className="flex space-x-4">
             <Link to="/portfolio" className="bg-primary text-primary-foreground px-6 py-3 rounded-md flex items-center hover:bg-primary/90 transition-colors">
@@ -32,4 +34,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;

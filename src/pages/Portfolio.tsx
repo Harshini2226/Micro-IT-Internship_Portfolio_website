@@ -90,6 +90,17 @@ const Portfolio = () => {
               </CardContent>
             </Card>)}
         </div>
+
+        {/* Interested to work together section */}
+        <div className="mt-20 bg-primary/10 rounded-lg p-8 text-center">
+          <h2 className="text-2xl font-bold mb-4">Interested in working together?</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
+            I'm always open to new opportunities and collaborations. Happy to join you on your next project!
+          </p>
+          <Link to="/contact" className="bg-primary text-primary-foreground px-6 py-3 rounded-md hover:bg-primary/90 transition-colors">
+            Contact Me
+          </Link>
+        </div>
       </div>
     </Layout>;
 };

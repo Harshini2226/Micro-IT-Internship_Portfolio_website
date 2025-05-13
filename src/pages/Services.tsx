@@ -2,12 +2,16 @@ import React from "react";
 import Layout from "@/components/Layout/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Layout as LayoutIcon, Search, Database, Activity, BarChart } from "lucide-react";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { Link } from "react-router-dom";
+
 interface Service {
   icon: React.ReactNode;
   title: string;
   description: string;
   features: string[];
 }
+
 const services: Service[] = [{
   icon: <LayoutIcon className="h-12 w-12 text-primary" />,
   title: "UI/UX Design",
@@ -39,6 +43,36 @@ const services: Service[] = [{
   description: "Tracking and analyzing website performance to make data-driven improvements.",
   features: ["Traffic Analysis", "Conversion Tracking", "User Behavior Insights", "Custom Reports"]
 }];
+
+// FAQ data
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+const faqs: FAQ[] = [
+  {
+    question: "What technologies do you specialize in?",
+    answer: "I specialize in modern web technologies including React, JavaScript, Python, and Java. I also have expertise in AI/ML and Blockchain development."
+  },
+  {
+    question: "How long does a typical project take?",
+    answer: "Project timelines vary depending on complexity and requirements. A simple website might take 2-3 weeks, while more complex applications can take 2-3 months or more. I'll provide a detailed timeline during our discovery phase."
+  },
+  {
+    question: "Do you provide ongoing support after project completion?",
+    answer: "Yes, I offer maintenance and support packages to ensure your application continues to run smoothly after launch. This includes bug fixes, security updates, and minor enhancements."
+  },
+  {
+    question: "What is your pricing structure?",
+    answer: "I offer flexible pricing options including project-based, hourly, and retainer models. The exact cost depends on your specific requirements, project complexity, and timeline."
+  },
+  {
+    question: "Can you work with existing codebases?",
+    answer: "Absolutely! I have experience with code auditing, refactoring, and extending existing applications. I can help improve your current solution or add new features."
+  }
+];
+
 const Services = () => {
   return <Layout>
       <div className="container mx-auto px-4 py-12">
@@ -103,7 +137,34 @@ const Services = () => {
             </div>
           </div>
         </div>
+        
+        {/* Frequently Asked Questions */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
+                  <AccordionContent>{faq.answer}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+        
+        {/* Ready to start your project */}
+        <div className="mt-20 bg-primary/10 p-12 rounded-lg text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
+            Let's turn your ideas into reality. Contact me today to discuss your project requirements and get started on building your next amazing digital solution.
+          </p>
+          <Link to="/contact" className="bg-primary text-primary-foreground px-6 py-3 rounded-md hover:bg-primary/90 transition-colors">
+            Get in Touch
+          </Link>
+        </div>
       </div>
     </Layout>;
 };
+
 export default Services;
